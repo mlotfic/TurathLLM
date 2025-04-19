@@ -106,4 +106,14 @@ To enable developers, researchers, and scholars to:
 ## 🔗 Related Projects & References
 
 - [**Bespoke Public Talks**](https://github.com/bespoke-inc/bespoke-public-talks):  
-  A valuable reference project that explores structuring public talks and events into rich, queryable data using schema design. Inspired parts of the modular schema design and entity modeling used in this repository.
+  A full code repo for the tutorial that walks through building AI-powered chatbots, covering foundational concepts to advanced deployment techniques.
+
+
+## 🎥 Video References
+
+- [**Arabic Text Handling**](https://youtu.be/tA7Fv2Xf9gg):  
+  A comprehensive walkthrough on transforming and handling Arabic text 
+
+- [**How to Build AI Chatbots: Full Guide from Beginner to Pro (Latest Update)**](https://www.youtube.com/watch?v=SWP3k-24jT4):  
+  A full tutorial that walks through building AI-powered chatbots, covering foundational concepts to advanced deployment techniques.
+
