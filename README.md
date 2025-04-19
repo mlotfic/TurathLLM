@@ -103,3 +103,7 @@ To enable developers, researchers, and scholars to:
 
 ---
 
+## 🔗 Related Projects & References
+
+- [**Bespoke Public Talks**](https://github.com/bespoke-inc/bespoke-public-talks):  
+  A valuable reference project that explores structuring public talks and events into rich, queryable data using schema design. Inspired parts of the modular schema design and entity modeling used in this repository.
