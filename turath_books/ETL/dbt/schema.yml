@@ -1,0 +1,138 @@
+version: 2
+
+models:
+  - name: pages
+    description: Raw page content with volume and book reference.
+    columns:
+      - name: book_id
+        tests: [not_null]
+      - name: page
+        tests: [not_null]
+      - name: text
+      - name: vol
+
+  - name: meta
+    description: Meta information for books.
+    columns:
+      - name: book_id_file
+      - name: book_id
+
+  - name: author_page_start
+    description: Starting page of the author's content.
+    columns:
+      - name: book_id
+        tests: [not_null]
+      - name: author_page_start
+
+  - name: info
+    description: Book short metadata extracted from JSON.
+    columns:
+      - name: book_id_file
+      - name: book_id
+
+  - name: info_long
+    description: Book long-form metadata.
+    columns:
+      - name: book_id_file
+      - name: book_id
+
+  - name: non_author
+    description: Placeholder for non-author contributor data.
+    columns:
+      - name: book_id
+
+  - name: volumes
+    description: List of volume identifiers per book.
+    columns:
+      - name: book_id
+      - name: volume_id
+
+  - name: volume_bound
+    description: Start and end page per volume.
+    columns:
+      - name: book_id
+      - name: volume_id
+      - name: start_page_id
+      - name: end_page_id
+
+  - name: volume_pair
+    description: Page-to-volume mapping.
+    columns:
+      - name: book_id
+      - name: volume_id
+      - name: page_id
+
+  - name: headings
+    description: Book headings hierarchy.
+    columns:
+      - name: book_id
+      - name: title
+      - name: level
+      - name: page
+
+  - name: page_headings
+    columns:
+      - name: book_id
+      - name: page_id
+      - name: heading_index
+
+  - name: headings_processed
+    description: Headings with section numbers and slugs.
+    columns:
+      - name: book_id
+      - name: header_id
+      - name: header
+      - name: level
+      - name: page
+      - name: slug
+      - name: section_number
+      - name: parent_id
+      - name: pages
+
+  - name: volume
+    description: Simple book-volume link.
+    columns:
+      - name: book_id
+      - name: volume_id
+
+  - name: section_pages
+    description: Pages covered by each section.
+    columns:
+      - name: book_id
+      - name: section_number
+      - name: pages
+
+  - name: headers_titles
+    description: Header tags and reference markers.
+    columns:
+      - name: book_id
+      - name: page_id
+      - name: header_id
+      - name: header_title
+      - name: hasRef
+
+  - name: headers_text
+    description: Paragraphs under headers.
+    columns:
+      - name: book_id
+      - name: page_id
+      - name: header_id
+      - name: header_text
+      - name: hasRef
+
+  - name: ref_text
+    description: Reference markers inside text or titles.
+    columns:
+      - name: book_id
+      - name: page_id
+      - name: header_id
+      - name: type
+      - name: ref_id
+
+  - name: footer_ref
+    description: Footnote-style references from page bottoms.
+    columns:
+      - name: book_id
+      - name: page_id
+      - name: ref
+      - name: Ref_context

@@ -108,8 +108,15 @@ pip install pandas beautifulsoup4 camel-tools
 ```bash
 turath_json_to_csv.py 
 ```
+---
 
-# Main script turath_books_json/ # Input JSON files output/narrator_data/ # CSV outputs entity_definitions.yaml # Schema definition (used for dbt/Airbyte) README.md # You're reading it :)` 
+## It includes: 
+* `turath_json_to_csv.py` (placeholder) 
+* `README.md` (placeholder) 
+* `schema.yml` (for dbt) 
+* `catalog.json` (for Airbyte) 
+* `entity_definitions.yaml` 
+* Folder structure for `turath_books_json/` and `output`
 
 ---
 

@@ -1,0 +1,38 @@
+{
+    "streams": [
+      {
+        "name": "pages",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "book_id": { "type": "string" },
+            "page": { "type": "integer" },
+            "text": { "type": "string" },
+            "vol": { "type": "string" }
+          }
+        }
+      },
+      {
+        "name": "meta",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "book_id_file": { "type": "string" },
+            "book_id": { "type": "string" }
+          }
+        }
+      },
+      {
+        "name": "author_page_start",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "book_id": { "type": "string" },
+            "author_page_start": { "type": "string" }
+          }
+        }
+      }
+      // ... Add the rest of the streams similarly
+    ]
+  }
+  
