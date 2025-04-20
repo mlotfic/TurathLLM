@@ -120,5 +120,10 @@ Created by \[m.lotfi\] — for processing classical Islamic and Arabic texts usi
 ---
 
 ## 📬 Contributions 
-PRs, issues, and feedback welcome!”
+PRs, issues, and feedback welcome!
+
+Open to improvements in: 
+* Multi-volume processing 
+* Graph-based relation extraction 
+* Language model enrichment”
 
