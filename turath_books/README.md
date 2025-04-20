@@ -38,3 +38,87 @@ Extracts:
 
 ### 5. Consolidate and Save as CSV
 All extracted entities are stored in dedicated CSVs under the output directory:
+
+---
+
+## 🗃️ Output Structure
+
+| File | Description |
+|------|-------------|
+| `pages.csv` | Raw page content (text, volume, page ID) |
+| `meta.csv`, `info.csv`, `info_long.csv` | Book-level metadata |
+| `volume.csv`, `volume_bound.csv`, `volume_pair.csv` | Volume structure and page mapping |
+| `headings.csv`, `headings_processed.csv` | Hierarchical section info |
+| `headers_titles.csv`, `headers_text.csv` | Header parsing from page content |
+| `ref_text.csv`, `footer_ref.csv` | Inline and footer references |
+| `section_pages.csv`, `page_headings.csv` | Mappings of pages to sections/headings |
+
+Each file includes `book_id` to preserve origin.
+
+---
+
+## 🛠️ Usage
+
+```bash
+python turath_json_to_csv.py
+```
+
+---
+
+## 🧩 Integration 
+
+### 🔁 With Airbyte 
+- Convert the `entity_definitions.yaml` to `catalog.json` for Airbyte ingestion. 
+- Load CSVs into any destination (e.g. PostgreSQL, BigQuery) using the schema. 
+
+### 🧱 With dbt * Use the `entity_definitions.yaml` to create `schema.yml`. 
+
+* Add tests like `not_null`, `unique`, and relationships. 
+* Build transformations or docs in dbt using the generated structured data. 
+
+
+---
+
+## 📎 Example Use Cases 
+
+* 📚 Building Islamic knowledge graphs (narrators, books, references) 
+* 🤖 Training LLMs with fine-tuned book metadata 
+* 🔍 Searching and referencing Arabic heritage texts 
+* 🧩 Generating semantic embeddings and document chunking 
+* 🗃️ Ingesting into SQL or graph databases for scholarly research
+
+---
+
+## ✅ Requirements 
+* Python 3.8+ * Dependencies: 
+* `pandas` 
+* `beautifulsoup4` 
+* `camel-tools` 
+
+Install: 
+```bash 
+pip install pandas beautifulsoup4 camel-tools
+
+``` 
+
+---
+
+## 📂 Project Structure 
+
+```bash
+turath_json_to_csv.py 
+```
+
+# Main script turath_books_json/ # Input JSON files output/narrator_data/ # CSV outputs entity_definitions.yaml # Schema definition (used for dbt/Airbyte) README.md # You're reading it :)` 
+
+---
+
+## 👨‍💻 Author 
+
+Created by \[m.lotfi\] — for processing classical Islamic and Arabic texts using modern data engineering pipelines. 
+
+---
+
+## 📬 Contributions 
+PRs, issues, and feedback welcome!”
+
