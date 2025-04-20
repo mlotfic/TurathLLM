@@ -1,0 +1,196 @@
+entities:
+  - name: pages
+    description: Basic page data extracted from the JSON documents.
+    fields:
+      - name: book_id
+        type: string
+        description: Identifier for the book.
+      - name: page
+        type: integer
+        description: Page number.
+      - name: text
+        type: string
+        description: Full page text content.
+      - name: vol
+        type: string
+        description: Volume identifier for the page.
+
+  - name: meta
+    description: Meta information at the book level.
+    fields:
+      - name: book_id_file
+        type: string
+        description: File-based identifier for the book.
+      - name: book_id
+        type: string
+        description: Logical ID for the book.
+      - name: <dynamic_fields>
+        type: string
+        description: Parsed key-value pairs from the book's "info" section.
+
+  - name: author_page_start
+    fields:
+      - name: book_id
+        type: string
+        description: Identifier for the book.
+      - name: author_page_start
+        type: string
+        description: First page where author content starts.
+
+  - name: info
+    inherits: meta
+    description: Short metadata section.
+
+  - name: info_long
+    inherits: meta
+    description: Extended metadata section.
+
+  - name: non_author
+    fields:
+      - name: book_id
+        type: string
+      - name: <...>
+        type: string
+        description: (Currently empty; structure TBD)
+
+  - name: volumes
+    fields:
+      - name: book_id
+        type: string
+      - name: volume_id
+        type: string
+
+  - name: volume_bound
+    fields:
+      - name: book_id
+        type: string
+      - name: volume_id
+        type: string
+      - name: start_page_id
+        type: integer
+      - name: end_page_id
+        type: integer
+
+  - name: volume_pair
+    fields:
+      - name: book_id
+        type: string
+      - name: volume_id
+        type: string
+      - name: page_id
+        type: integer
+
+  - name: headings
+    fields:
+      - name: book_id
+        type: string
+      - name: title
+        type: string
+      - name: level
+        type: integer
+      - name: page
+        type: integer
+
+  - name: page_headings
+    fields:
+      - name: book_id
+        type: string
+      - name: page_id
+        type: integer
+      - name: heading_index
+        type: integer
+
+  - name: headings_processed
+    fields:
+      - name: book_id
+        type: string
+      - name: header_id
+        type: integer
+      - name: header
+        type: string
+      - name: level
+        type: integer
+      - name: page
+        type: integer
+      - name: slug
+        type: string
+      - name: section_number
+        type: string
+      - name: parent_id
+        type: integer | null
+      - name: pages
+        type: list
+        description: List of page numbers in this section.
+
+  - name: section_pages
+    fields:
+      - name: book_id
+        type: string
+      - name: section_number
+        type: string
+      - name: pages
+        type: list
+        description: List of page numbers covered by this section.
+
+  - name: volume
+    fields:
+      - name: book_id
+        type: string
+      - name: volume_id
+        type: string
+
+  - name: headers_titles
+    fields:
+      - name: book_id
+        type: string
+      - name: page_id
+        type: integer
+      - name: header_id
+        type: integer
+      - name: header_title
+        type: string
+      - name: hasRef
+        type: boolean
+
+  - name: headers_text
+    fields:
+      - name: book_id
+        type: string
+      - name: page_id
+        type: integer
+      - name: header_id
+        type: integer
+      - name: header_text
+        type: string
+      - name: hasRef
+        type: boolean
+
+  - name: ref_text
+    fields:
+      - name: book_id
+        type: string
+      - name: page_id
+        type: integer
+      - name: header_id
+        type: integer
+      - name: type
+        type: string
+        description: Location of reference (e.g., "in_header_title", "in_header_text")
+      - name: ref_id
+        type: string
+
+  - name: footer_ref
+    fields:
+      - name: book_id
+        type: string
+      - name: page_id
+        type: integer
+      - name: ref
+        type: string
+        description: The reference ID, e.g. (^١)
+      - name: Ref_context
+        type: string
+        description: Text of the reference
+      - name: Ref_context_cleaned
+        type: string
+        description: Cleaned text of the reference context
