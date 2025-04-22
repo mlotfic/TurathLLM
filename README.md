@@ -88,37 +88,37 @@ This specific component focuses on processing **Turath heritage book data (JSON 
 
 ```css
 turath_books/
-├── input/                                # Directory for raw Turath JSON files
-│   ├── example_book.json                 # Example input file
-│
-├── output/                               # Directory for generated CSV files
-│   ├── pages.csv                         # Extracted page-level data
-│   ├── meta.csv                          # Metadata about books
-│   ├── headings.csv                      # Extracted headings/sections
-│   ├── volume.csv                        # Volume-level data
-│   ├── ref_text.csv                      # Inline/footer references
-│
-├── schemas/                              # Schema definitions for Turath books
-│   ├── rdb_schema.sql                    # Relational DB schema
-│   ├── gdb_schema.cypher                 # Graph DB schema
-│   ├── entity_definitions.yaml           # Entity and relationship definitions
-│
-├── scripts/                              # Helper scripts for ETL processing
-│   ├── parse_json.py                     # Script to parse Turath JSON files
-│   ├── normalize_data.py                 # Script to normalize and clean data
-│   ├── export_csv.py                     # Script to export data to CSV
-│
-├── docs/                                 # Documentation for the pipeline
-│   ├── README.md                         # Overview of the Turath Books pipeline
-│   ├── architecture_diagram.png          # Diagram of the ETL process
-│
-├── tests/                                # Unit tests for the pipeline
-│   ├── test_parse_json.py                # Tests for JSON parsing
-│   ├── test_normalize_data.py            # Tests for data normalization
-│   ├── test_export_csv.py                # Tests for CSV export
-│
-└── README.md                             # Main README for the `turath_books` component
-└── LICENSE
+            ├── input/                                # Directory for raw Turath JSON files
+            │   ├── example_book.json                 # Example input file
+            │
+            ├── output/                               # Directory for generated CSV files
+            │   ├── pages.csv                         # Extracted page-level data
+            │   ├── meta.csv                          # Metadata about books
+            │   ├── headings.csv                      # Extracted headings/sections
+            │   ├── volume.csv                        # Volume-level data
+            │   ├── ref_text.csv                      # Inline/footer references
+            │
+            ├── schemas/                              # Schema definitions for Turath books
+            │   ├── rdb_schema.sql                    # Relational DB schema
+            │   ├── gdb_schema.cypher                 # Graph DB schema
+            │   ├── entity_definitions.yaml           # Entity and relationship definitions
+            │
+            ├── scripts/                              # Helper scripts for ETL processing
+            │   ├── parse_json.py                     # Script to parse Turath JSON files
+            │   ├── normalize_data.py                 # Script to normalize and clean data
+            │   ├── export_csv.py                     # Script to export data to CSV
+            │
+            ├── docs/                                 # Documentation for the pipeline
+            │   ├── README.md                         # Overview of the Turath Books pipeline
+            │   ├── architecture_diagram.png          # Diagram of the ETL process
+            │
+            ├── tests/                                # Unit tests for the pipeline
+            │   ├── test_parse_json.py                # Tests for JSON parsing
+            │   ├── test_normalize_data.py            # Tests for data normalization
+            │   ├── test_export_csv.py                # Tests for CSV export
+            │
+            └── README.md                             # Main README for the `turath_books` component
+            └── LICENSE
 ```
 
 Each subfolder (e.g., `islamicurdubooks`, `islamweb`, `hadith-api-1`) includes:
