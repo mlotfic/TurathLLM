@@ -668,7 +668,7 @@ def get_structure_data_from_book_json(data, book_id_file):
 
 # Usage example
 if __name__ == "__main__":    
-    # file_path = "./turath_books_json/1.json"
+    # file_path = "./turath_books_json/2.json"
     directory = "./turath_books_json"
     json_files = walk_through_json_files(directory)
 
@@ -708,35 +708,35 @@ if __name__ == "__main__":
 
         df = pd.DataFrame(pages_data)
         csv_path = f'./output/books/{book_id_file}/orignal_pages.csv'
-        to_csv(df, file_path)
+        to_csv(df, csv_path)
         
         df = pd.DataFrame(volume_pair_data)
         csv_path = f'./output/books/{book_id_file}/volume_page_pair.csv'
-        to_csv(df, file_path)
+        to_csv(df, csv_path)
         
         df = pd.DataFrame(headings_processed_data)
         csv_path = f'./output/books/{book_id_file}/headings.csv'
-        to_csv(df, file_path)
+        to_csv(df, csv_path)
         
         df = pd.DataFrame(section_pages_data)
         csv_path = f'./output/books/{book_id_file}/sections.csv'
-        to_csv(df, file_path)
+        to_csv(df, csv_path)
         
         df = pd.DataFrame(headers_titles_data)
         csv_path = f'./output/books/{book_id_file}/headings_titles.csv'
-        to_csv(df, file_path)
+        to_csv(df, csv_path)
         
         df = pd.DataFrame(headers_text_data)
         csv_path = f'./output/books/{book_id_file}/headings_text.csv'
-        to_csv(df, file_path)
+        to_csv(df, csv_path)
         
         df = pd.DataFrame(ref_text_data)
         csv_path = f'./output/books/{book_id_file}/text_citations.csv'
-        to_csv(df, file_path)
+        to_csv(df, csv_path)
         
         df = pd.DataFrame(footer_ref_data)
         csv_path = f'./output/books/{book_id_file}/footer_citations_values.csv'
-        to_csv(df, file_path)
+        to_csv(df, csv_path)
         
         # Extend master lists
         meta_list.extend(meta)
