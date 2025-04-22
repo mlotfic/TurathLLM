@@ -1,5 +1,5 @@
 entities:
-  - name: pages
+  - name: orignal_pages
     description: Basic page data extracted from the JSON documents.
     fields:
       - name: book_id
@@ -71,7 +71,7 @@ entities:
       - name: end_page_id
         type: integer
 
-  - name: volume_pair
+  - name: volume_page_pair
     fields:
       - name: book_id
         type: string
@@ -91,16 +91,7 @@ entities:
       - name: page
         type: integer
 
-  - name: page_headings
-    fields:
-      - name: book_id
-        type: string
-      - name: page_id
-        type: integer
-      - name: heading_index
-        type: integer
-
-  - name: headings_processed
+  - name: sections
     fields:
       - name: book_id
         type: string
@@ -139,7 +130,7 @@ entities:
       - name: volume_id
         type: string
 
-  - name: headers_titles
+  - name: headings_titles
     fields:
       - name: book_id
         type: string
