@@ -1,0 +1,290 @@
+@font-face {
+	font-family: 'me_quran';
+	src: url('fonts/me_quran.eot');
+    src: url('fonts/me_quran.eot?#iefix') format('embedded-opentype');	
+	src: local('Arial'), 
+	url('fonts/me_quran.woff') format('woff'), 
+	url('fonts/me_quran.ttf') format('truetype'), 
+	url('fonts/me_quran.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+@font-face {
+font-family: 'scheh';
+src: url('fonts/Scheherazade.eot'); /* IE9 Compat Modes */
+src: url('fonts/Scheherazade.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('fonts/Scheherazade.woff') format('woff'), /* Modern Browsers */
+     url('fonts/Scheherazade.ttf')  format('truetype'), /* Safari, Android, iOS */    
+     local('Arial');	 
+}
+
+
+
+td {
+        font-family: Helvetica, Verdana, Arial, Georgia, sans-serif;
+        
+        font-size: 12px;
+        color: maroon;
+        line-height: normal;
+}
+
+p {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: #000000;
+        line-height: 15px;
+}
+
+h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        color: black;
+        /*line-height: 24px;*/
+}
+
+h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: #000000;
+        /*line-height: 22px;*/
+}
+
+
+th {
+font-size: 14px;
+font-weight: bold;
+text-align: center;
+color: black;
+}
+
+#tbl-container {
+width: 100%;
+height: 550px;
+/*scrollbar-base-color:#ffeaff;*/
+border: 1px solid black;
+overflow: auto;
+}
+
+table {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #00C0F0; text-decoration: none; 
+/*table-layout: fixed;
+border-collapse: collapse;*/
+}
+
+thead th, thead th.locked {
+
+font-size: 14px;
+font-weight: bold;
+text-align: center;
+color: black;
+/*
+background-color: navy;
+border-right: 1px solid silver;
+*/
+position:relative;
+cursor: default; 
+}
+
+thead td, thead td.locked {
+/*
+font-size: 14px;
+font-weight: bold;*/
+text-align: center;
+color: black;
+/*
+background-color: navy;
+border-right: 1px solid silver;
+*/
+position:relative;
+cursor: default; 
+}
+
+thead th {
+z-index: 20;
+}
+
+
+thead th.locked {z-index: 30;}
+
+thead td {
+z-index: 20;
+}
+
+
+thead td.locked {z-index: 30;}
+
+.small{
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #000000;
+        line-height: 12px;
+        /* font-style: italic; */
+}
+.subhead{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: #000000;
+        line-height: 12px;
+        /* font-style: italic; */
+}
+a:link    { color: red;  text-decoration: none}      /* unvisited links */
+a:visited { color: red; text-decoration: none}     /* visited links */
+a:active  { color: red; text-decoration: none}   /* active links */
+a:hover   { color: red; text-decoration: underline}     /*  hover links */
+
+/* header link (used in frameless page header menu) */
+
+a.hlink:link    { color: #C0FF90; text-decoration: none}      /* unvisited links */
+a.hlink:visited { color: #C0FF90; text-decoration: none}     /* visited links */
+a.hlink:active  { color: #C0FF90; text-decoration: none}   /* active links */
+a.hlink:hover   { color: #C0FF90; }     /*  hover links */
+
+a.slink{color:white; font-size:11px; font-family: Tahoma, Arial, Helvetica, sans-serif; text-decoration:none; font-weight: bold}
+a.slink:visited{color:white; text-decoration:none;}
+a.slink:hover{color:white; text-decoration:underline;}
+
+a.tree:link    { color:white;  text-decoration: none}      /* unvisited links */
+a.tree:visited { color:white; text-decoration: none}     /* visited links */
+a.tree:active  { color:white; text-decoration: none}   /* active links */
+a.tree:hover   { color:white; text-decoration: underline}     /*  hover links */
+                
+.feature {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        /*font-family: Trebuchet MS, Helvetica, Arial, sans serif;*/
+        font-size: 12px;
+        color: green;
+}
+.feature2 {
+       /* font-family: Verdana, Arial, Helvetica, sans-serif; */
+        font-family: Trebuchet MS, Helvetica, Arial, sans serif;
+        font-size: 12px;
+        font-weight: bold;
+        color: green;
+}
+
+.white {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        font-weight: bold;
+        color: white;
+}
+
+.highlight {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        font-weight: bold;
+        color: black;
+}
+
+.arabic {
+        font-family: scheh,Traditional Arabic, Arial, Helvetica, sans-serif;
+        height:500px;
+        font-size: 30px;
+        padding: 5px;
+        line-height: 30px;
+ -moz-border-radius: 5px;
+ border-radius: 5px;
+visibility:visible; color:white; 
+background-color:#6f9427;
+    overflow-x:hidden; 
+    overflow-y:scroll;
+}
+
+.arabic3  {
+        font-family: me_quran, Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: black;
+        line-height: 24px
+}
+
+.arabic2  {
+        font-family: scheh,  Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;        
+        color: black;        
+        line-height: 24px
+}
+
+ul {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; /*color: #00C0F0;*/ text-decoration: none;
+}
+
+li {
+        font-size: 11px;
+        line-height: 20px;
+}
+
+
+
+.input { font-family:verdana; font-size:x-small; border-width:2px; border-color:#6d5731; background-color:#C0FF90; padding:1px; 
+
+ -moz-border-radius: 5px;
+ border-radius: 5px;}
+
+.input2 { font-family:verdana; font-size:small; border-width:3px; border-color:#00C0F0; background-color:#00F0F0; padding:1px}
+
+.input3 { font-family:verdana; font-size:8; border-width:1px; border-color:#0080C0; background-color:#00C0F0; padding:0px}
+
+
+.form  {font-size : 12;  
+  background-color : white; align : center;       
+  padding-left : 8px;     padding-right : 8px;    padding-top : 8px;      padding-bottom : 2px; color : black;    padding : 2px;
+  
+ -moz-border-radius: 5px;
+ border-radius: 5px;
+  }
+
+.form2  
+{ 
+border-style : double;  background-color : #00C0F0; align : center;   
+padding-left : 2px;     padding-right : 2px;    padding-top : 2px;      padding-bottom : 2px; 
+color : green;    padding : 2px; width : 400px
+}
+
+        
+
+    .WrapperDiv {
+        width:100%;
+        height:550px;
+        border: 1px solid black;
+        scrollbar-base-color:#ffeaff;
+        overflow: auto;
+    }        
+    .WrapperDiv TH {
+        position:relative;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        color: black;
+    }
+    .WrapperDiv TR 
+    {
+        /* Needed for IE */
+        height:1px;
+    } 
+
+
+.headerDiv {
+  
+background-color: #6f9427;
+color: #fff;
+ -webkit-box-shadow: 5px 5px 5px #888;
+ -moz-box-shadow: 5px 5px 5px #888;
+box-shadow: 5px 5px 5px #888;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+.body { 
+    background-image:url(Media/Images/bgd.gif);
+     background-repeat:repeat-x;
+       
+       font-family: Verdana, Arial, Helvetica, sans-serif; 
+       /*  font-family: Trebuchet MS, Helvetica, Arial, sans serif; */
+        font-size: 12px;
+        margin-right:5px;
+
+       margin-left: 5px; 
+       margin-top: 5px; 
+}
