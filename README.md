@@ -2,7 +2,6 @@
 
 > unstructured-to-structured-ai-schema (Main Project)
 
----
 
 ### 📌 Goal
 
