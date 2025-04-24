@@ -2,6 +2,8 @@
 
 > unstructured-to-structured-ai-schema (Main Project)
 
+---
+
 ### 📌 Goal
 
 To enable developers, researchers, and scholars to:
