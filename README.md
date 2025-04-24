@@ -95,8 +95,12 @@ This specific component focuses on processing **Turath heritage book data (JSON 
 *   Python 3.8+
 *   `pandas`
 *   `beautifulsoup4`
+*   `re`
 *   `camel-tools` (likely for Arabic text processing)
-*   `pyarabic` (likely for Arabic numeric text processing)
+*   `pyarabic` (likely for Arabic numeric text processing and detection)
+*   `dateparser` (likely for Arabic date detection)
+*   `spacy` (likely for Arabic NPL)
+*   `difflib` (likely for text similarity)
 
 ---
 
