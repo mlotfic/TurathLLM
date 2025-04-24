@@ -1,4 +1,4 @@
-## Project: unstructured-to-structured-ai-schema (Main Project)
+# 📚 Project: unstructured-to-structured-ai-schema (Main Project)
 
 ### Core Goal (from main README)
 
@@ -165,13 +165,22 @@ To enable developers, researchers, and scholars to:
 
 ## 🔗 Related Projects & References
 
-- [**Bespoke Public Talks**](https://github.com/bespoke-inc/bespoke-public-talks):  
-  A full code repo for the tutorial that walks through building AI-powered chatbots, covering foundational concepts to advanced deployment techniques.
+- [**Quran-DB**](https://github.com/youzarsiph/quran-db):  
+  Quran-DB is a sophisticated and comprehensive database of the Quran, available in both SQLite3 and JSON formats.
+  Designed for optimal data organization and retrieval, it provides robust and efficient access to Quranic content and metadata.
+  The database is meticulously structured to support various applications, including scholarly research, educational tools, and digital Quranic resources. 
 
 - [**Quran Detector (Annotator)**](https://github.com/SElBeltagy/Quran_Detector):  
   A full code repo that capable of identifying any Quranic verse or verse fragment that is equal to or greater than 3 words, in any piece of text.
   The tool is capable of detecting minor typos and even missing words, but it is most efficient when carrying out exact matching.
-  Error detection and missing word detection can be enabled and disabled by the programmer using the code provided here..
+  Error detection and missing word detection can be enabled and disabled by the programmer using the code provided here.
+
+- [**Bespoke Public Talks**](https://github.com/bespoke-inc/bespoke-public-talks):  
+  A full code repo for the tutorial that walks through building AI-powered chatbots, covering foundational concepts to advanced deployment techniques.
+
+- [**Arabic NLP**](https://github.com/CAMeL-Lab/camel_tools):  
+  CAMeL Tools is suite of Arabic natural language processing tools developed by the CAMeL Lab at New York University Abu Dhabi.
+
 
 ## 🎥 Video References
 
