@@ -71,6 +71,7 @@ This specific component focuses on processing **Turath heritage book data (JSON 
 *   `pandas`
 *   `beautifulsoup4`
 *   `camel-tools` (likely for Arabic text processing)
+*   `pyarabic` (likely for Arabic numeric text processing)
 
 ---
 
@@ -175,11 +176,14 @@ To enable developers, researchers, and scholars to:
   The tool is capable of detecting minor typos and even missing words, but it is most efficient when carrying out exact matching.
   Error detection and missing word detection can be enabled and disabled by the programmer using the code provided here.
 
+- [**Arabic NLP (camel_tools)**](https://github.com/CAMeL-Lab/camel_tools):  
+  CAMeL Tools is suite of Arabic natural language processing tools developed by the CAMeL Lab at New York University Abu Dhabi.
+
+- [**Arabic NLP (pyarabic)**](https://github.com/linuxscout/pyarabic):  
+  A specific Arabic language library for Python, provides basic functions to manipulate Arabic letters and text, like detecting Arabic letters, Arabic letters groups and characteristics, remove diacritics etc.
+  
 - [**Bespoke Public Talks**](https://github.com/bespoke-inc/bespoke-public-talks):  
   A full code repo for the tutorial that walks through building AI-powered chatbots, covering foundational concepts to advanced deployment techniques.
-
-- [**Arabic NLP**](https://github.com/CAMeL-Lab/camel_tools):  
-  CAMeL Tools is suite of Arabic natural language processing tools developed by the CAMeL Lab at New York University Abu Dhabi.
 
 
 ## 🎥 Video References
