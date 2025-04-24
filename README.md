@@ -168,6 +168,10 @@ To enable developers, researchers, and scholars to:
 - [**Bespoke Public Talks**](https://github.com/bespoke-inc/bespoke-public-talks):  
   A full code repo for the tutorial that walks through building AI-powered chatbots, covering foundational concepts to advanced deployment techniques.
 
+- [**Quran Detector (Annotator)**](https://github.com/SElBeltagy/Quran_Detector):  
+  A full code repo that capable of identifying any Quranic verse or verse fragment that is equal to or greater than 3 words, in any piece of text.
+  The tool is capable of detecting minor typos and even missing words, but it is most efficient when carrying out exact matching.
+  Error detection and missing word detection can be enabled and disabled by the programmer using the code provided here..
 
 ## 🎥 Video References
 
