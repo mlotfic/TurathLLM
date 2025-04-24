@@ -1,17 +1,19 @@
-# 📚 Project: unstructured-to-structured-ai-schema (Main Project)
+# 📚 Project: 
 
-### Core Goal (from main README)
+> unstructured-to-structured-ai-schema (Main Project)
 
-*   To provide **database schema designs** (blueprints) for transforming unstructured data into structured formats.
-*   Target applications include:
-    *   **AI & LLMs:** For training, information extraction (NER), semantic enrichment.
-    *   **Relational Databases (RDB):** For standard tabular storage (e.g., PostgreSQL, SQLite) and analytical querying.
-    *   **Graph Databases (GDB):** For representing complex entities and relationships (e.g., Neo4j).
-    *   **Retrieval-Augmented Generation (RAG):** To feed structured, contextual data to LLMs.
-*   Focuses on complex data like historical texts (including Islamic sources like Hadith, books), invoices, etc.
-*   Aims to bridge relational and graph data models.
+### 📌 Goal
 
-### Key Components & Structure (from main README)
+To enable developers, researchers, and scholars to:
+
+- Rapidly structure unstructured Islamic or historical data
+- Build LLM-based applications with integrated knowledge graphs
+- Enable RAG pipelines with rich, contextual structured sources
+- Connect relational and graph-based knowledge systems
+
+---
+
+### Key Components & Structure
 
 *   **`schemas/` directory:** Contains schema definitions for different data sources/types (e.g., `books`, `scraping/alminasadata`).
 *   **Schema Files within each sub-directory:**
@@ -21,7 +23,9 @@
 *   **`examples/`:** Sample input data (e.g., `hadith_chain_example.json`).
 *   **`pipelines/`, `scripts/`, `docs/`:** Supporting materials for ETL processes, helper scripts, and documentation.
 
-### Data Sources Explored (from main README)
+---
+
+### Data Sources Explored
 
 *   **Books:** OpenITI Corpus, **Turath Platform**, Islamweb Library, Islamic Urdu Books.
 *   **Narrators:** MuslimScholars.info, Islamic Urdu Books Rawy List, AlMinasa AI.
@@ -43,6 +47,21 @@ This specific component focuses on processing **Turath heritage book data (JSON 
     *   RAG systems
     *   **dbt** data modeling
     *   **Airbyte** data pipelines
+    
+---
+
+### 📌 Core Goal
+
+*   To provide **database schema designs** (blueprints) for transforming unstructured data into structured formats.
+*   Target applications include:
+    *   **AI & LLMs:** For training, information extraction (NER), semantic enrichment.
+    *   **Relational Databases (RDB):** For standard tabular storage (e.g., PostgreSQL, SQLite) and analytical querying.
+    *   **Graph Databases (GDB):** For representing complex entities and relationships (e.g., Neo4j).
+    *   **Retrieval-Augmented Generation (RAG):** To feed structured, contextual data to LLMs.
+*   Focuses on complex data like historical texts (including Islamic sources like Hadith, books), invoices, etc.
+*   Aims to bridge relational and graph data models.
+
+---
 
 ### Approach (from turath_books README)
 
@@ -51,11 +70,14 @@ This specific component focuses on processing **Turath heritage book data (JSON 
 3.  **Normalization:** Creates slugs, section numbers, and maps relationships between pages, headings, and volumes.
 4.  **Output:** Saves extracted entities into multiple distinct CSV files (e.g., `pages.csv`, `meta.csv`, `headings.csv`, `volume.csv`, `ref_text.csv`, etc.) under an `output` directory. Each CSV includes a `book_id` for traceability.
 
+---
+
 ### Integration (from turath_books README)
 
 *   Explicitly leverages the `entity_definitions.yaml` (likely defined within or aligned with the main project's schema structure) to:
     *   Generate `catalog.json` for **Airbyte** data ingestion pipelines.
     *   Generate `schema.yml` for **dbt** data modeling, testing, and documentation.
+---
 
 ### Example Use Cases (from turath_books README)
 
@@ -64,6 +86,8 @@ This specific component focuses on processing **Turath heritage book data (JSON 
 *   Searching and referencing Arabic heritage texts.
 *   Generating semantic embeddings and document chunking.
 *   Ingesting into SQL or graph databases for scholarly research.
+
+---
 
 ### Dependencies (from turath_books README)
 
@@ -150,17 +174,6 @@ Here are the sources being explored for schema extraction and dataset creation:
 - [Hadith API (FawazAhmed)](https://github.com/fawazahmed0/hadith-api/)
 
 These sources are used to derive schemas, sample datasets, and entity relationship models.
-
----
-
-## 📌 Goal
-
-To enable developers, researchers, and scholars to:
-
-- Rapidly structure unstructured Islamic or historical data
-- Build LLM-based applications with integrated knowledge graphs
-- Enable RAG pipelines with rich, contextual structured sources
-- Connect relational and graph-based knowledge systems
 
 ---
 
