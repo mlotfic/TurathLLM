@@ -182,12 +182,19 @@ These sources are used to derive schemas, sample datasets, and entity relationsh
 
 ---
 
-## 🔗 Related Projects & References
+## 🔗 Related Datasets Projects & References
+
+- [**Sanadset 650K: Data on Hadith Narrators**](https://data.mendeley.com/datasets/5xth87zwb5/4):  
+  Sanadset is a full hadith dataset that contains over 650,986 records collected from 926 historical Arabic books of hadith. This dataset can be used for further investigation and classification of hadiths (Strong/Weak), and narrators (trustworthy/not) using AI techniques, and also it can be used as a linguistic resource tool for Arabic Natural Language Processing.
 
 - [**Quran-DB**](https://github.com/youzarsiph/quran-db):  
   Quran-DB is a sophisticated and comprehensive database of the Quran, available in both SQLite3 and JSON formats.
   Designed for optimal data organization and retrieval, it provides robust and efficient access to Quranic content and metadata.
   The database is meticulously structured to support various applications, including scholarly research, educational tools, and digital Quranic resources. 
+
+---
+
+## 🔗 Related Projects & References
 
 - [**Quran Detector (Annotator)**](https://github.com/SElBeltagy/Quran_Detector):  
   A full code repo that capable of identifying any Quranic verse or verse fragment that is equal to or greater than 3 words, in any piece of text.
