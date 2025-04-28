@@ -1,9 +1,18 @@
 # 📚 Project: 
 
-> unstructured-to-structured-ai-schema (Main Project)
+> unstructured-to-structured-ai-schema (Main Page)
 
+## 📌 Table of Contents
 
-### 📌 Goal
+1. [Project Goal](#goal)
+2. [Example Use Cases](#--example-use-cases)
+3. [Project Approach](./docs/approach.md)
+3. [Key Components & Structure](./docs/approach.md)
+4. [Data Sources Collections](./docs/data_sources.md)
+
+---
+
+## 📌 Goal
 
 To enable developers, researchers, and scholars to:
 
@@ -14,44 +23,7 @@ To enable developers, researchers, and scholars to:
 
 ---
 
-### Key Components & Structure
-
-*   **`schemas/` directory:** Contains schema definitions for different data sources/types (e.g., `books`, `scraping/alminasadata`).
-*   **Schema Files within each sub-directory:**
-    *   `rdb_schema.sql`: SQL schema for relational databases.
-    *   `gdb_schema.cypher`: Cypher schema for graph databases.
-    *   `entity_definitions.yaml`: A crucial human/machine-readable file defining entities and their relationships. This can be used to drive other tools (like dbt, Airbyte).
-*   **`examples/`:** Sample input data (e.g., `hadith_chain_example.json`).
-*   **`pipelines/`, `scripts/`, `docs/`:** Supporting materials for ETL processes, helper scripts, and documentation.
-
----
-
-### Data Sources Explored
-
-*   **Books:** OpenITI Corpus, **Turath Platform**, Islamweb Library, Islamic Urdu Books.
-*   **Narrators:** MuslimScholars.info, Islamic Urdu Books Rawy List, AlMinasa AI.
-*   **APIs:** Hadith API (fawazahmed0).
-
----
-
-## Component Example: Turath Books Pipeline (`turath_books/README.md`)
-
-This specific component focuses on processing **Turath heritage book data (JSON format)**. It acts as a concrete ETL (Extract, Transform, Load) pipeline within the broader project framework.
-
-### Goal (from turath_books README)
-
-*   To provide a pipeline that converts Turath JSON book data into structured **CSV files**.
-*   These CSVs are designed for downstream use in:
-    *   Database ingestion (RDB/GDB)
-    *   Knowledge graph construction
-    *   NLP processing
-    *   RAG systems
-    *   **dbt** data modeling
-    *   **Airbyte** data pipelines
-    
----
-
-### 📌 Core Goal
+## 📌 Core Goal
 
 *   To provide **database schema designs** (blueprints) for transforming unstructured data into structured formats.
 *   Target applications include:
@@ -64,35 +36,38 @@ This specific component focuses on processing **Turath heritage book data (JSON 
 
 ---
 
-### Approach (from turath_books README)
+## 📎 Example Use Cases 
 
-1.  **Input:** Reads `.json` files from a specified directory (`./turath_books_json`).
-2.  **Parsing:** Extracts book metadata, volume/section structures, page content, headers, and references (inline/footer).
-3.  **Normalization:** Creates slugs, section numbers, and maps relationships between pages, headings, and volumes.
-4.  **Output:** Saves extracted entities into multiple distinct CSV files (e.g., `pages.csv`, `meta.csv`, `headings.csv`, `volume.csv`, `ref_text.csv`, etc.) under an `output` directory. Each CSV includes a `book_id` for traceability.
+* 📚 Building Islamic knowledge graphs (narrators, books, references) 
+* 🤖 Training LLMs with fine-tuned book metadata 
+* 🔍 Searching and referencing Arabic heritage texts 
+* 🧩 Generating semantic embeddings and document chunking 
+* 🗃️ Ingesting into SQL or graph databases for scholarly research
 
 ---
 
-### Integration (from turath_books README)
+## Key Components & Structure
 
-*   Explicitly leverages the `entity_definitions.yaml` (likely defined within or aligned with the main project's schema structure) to:
-    *   Generate `catalog.json` for **Airbyte** data ingestion pipelines.
-    *   Generate `schema.yml` for **dbt** data modeling, testing, and documentation.
----
+###   **`schemas/` directory:** 
+*   Contains schema definitions for different data sources/types.
+*   `rdb_schema.sql`: SQL schema for relational databases.
+*   `gdb_schema.cypher`: Cypher schema for graph databases.
+*   `entity_definitions.yaml`: A crucial human/machine-readable file defining entities and their relationships. This can be used to drive other tools (like dbt, Airbyte).
 
-### Example Use Cases (from turath_books README)
+### **`input/`:** 
+- Sample input data (e.g., `hadith_chain_example.json`).
 
-*   Building Islamic knowledge graphs (narrators, books, references).
-*   Training LLMs with fine-tuned book metadata.
-*   Searching and referencing Arabic heritage texts.
-*   Generating semantic embeddings and document chunking.
-*   Ingesting into SQL or graph databases for scholarly research.
+### **`output/`:** 
+- Sample output data (e.g., `hadith_chain_example.csv`).
+
+### **`pipelines/`, `scripts/`, `docs/`:** 
+- Supporting materials for ETL processes, helper scripts, and documentation.
 
 ---
 
 ### Dependencies (from turath_books README)
 
-*   Python 3.8+
+*   `Python 3.8.2+`
 *   `pandas`
 *   `beautifulsoup4`
 *   `re`
@@ -111,74 +86,6 @@ This specific component focuses on processing **Turath heritage book data (JSON 
 *   It takes a specific data source (Turath JSON) and processes it into structured **CSVs**.
 *   Crucially, it uses the `entity_definitions.yaml` concept from the main project to facilitate integration with data tools like **Airbyte** and **dbt**.
 *   The structured CSV output from `turath_books` is intended to be loadable into databases conforming to the schemas defined in the main project, making it suitable for AI/LLM fine-tuning, knowledge graph population, and RAG applications.
-
----
-
-## 🧱 Project Structure
-
-```css
-turath_books/
-            ├── input/                                # Directory for raw Turath JSON files
-            │   ├── example_book.json                 # Example input file
-            │
-            ├── output/                               # Directory for generated CSV files
-            │   ├── pages.csv                         # Extracted page-level data
-            │   ├── meta.csv                          # Metadata about books
-            │   ├── headings.csv                      # Extracted headings/sections
-            │   ├── volume.csv                        # Volume-level data
-            │   ├── ref_text.csv                      # Inline/footer references
-            │
-            ├── schemas/                              # Schema definitions for Turath books
-            │   ├── rdb_schema.sql                    # Relational DB schema
-            │   ├── gdb_schema.cypher                 # Graph DB schema
-            │   ├── entity_definitions.yaml           # Entity and relationship definitions
-            │
-            ├── scripts/                              # Helper scripts for ETL processing
-            │   ├── parse_json.py                     # Script to parse Turath JSON files
-            │   ├── normalize_data.py                 # Script to normalize and clean data
-            │   ├── export_csv.py                     # Script to export data to CSV
-            │
-            ├── docs/                                 # Documentation for the pipeline
-            │   ├── README.md                         # Overview of the Turath Books pipeline
-            │   ├── architecture_diagram.png          # Diagram of the ETL process
-            │
-            ├── tests/                                # Unit tests for the pipeline
-            │   ├── test_parse_json.py                # Tests for JSON parsing
-            │   ├── test_normalize_data.py            # Tests for data normalization
-            │   ├── test_export_csv.py                # Tests for CSV export
-            │
-            └── README.md                             # Main README for the `turath_books` component
-            └── LICENSE
-```
-
-Each subfolder (e.g., `islamicurdubooks`, `islamweb`, `hadith-api-1`) includes:
-
-- `rdb_schema.sql` – PostgreSQL/SQLite compatible schema
-- `gdb_schema.cypher` – Neo4j schema for graph modeling
-- `entity_definitions.yaml` – Describes data entities and relationships
-- Example data and diagrams for reference
-
----
-
-## 📚 Data Sources
-
-Here are the sources being explored for schema extraction and dataset creation:
-
-### 📖 Book Sources
-- [OpenITI GitHub Corpus](https://github.com/OpenITI/RELEASE/tree/v2023.1.8)
-- [Turath Platform](https://app.turath.io/)
-- [Islamweb Library](https://www.islamweb.net/ar/library/index.php?page=bookslist)
-- [Islamic Urdu Books](https://islamicurdubooks.com/index.php)
-
-### 👤 Narrator Information
-- [MuslimScholars.info](https://muslimscholars.info/manage.php?submit=scholar&ID=3)
-- [Islamic Urdu Books Rawy List](https://islamicurdubooks.com/hadith/rawylistcomplete.php?bookid=1&LFirstChar=%d8%a8)
-- [AlMinasa AI Project](https://alminasa.ai/)
-
-### 🔗 API & Miscellaneous
-- [Hadith API (FawazAhmed)](https://github.com/fawazahmed0/hadith-api/)
-
-These sources are used to derive schemas, sample datasets, and entity relationship models.
 
 ---
 
