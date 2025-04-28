@@ -76,17 +76,6 @@ python turath_json_to_csv.py
 * Add tests like `not_null`, `unique`, and relationships. 
 * Build transformations or docs in dbt using the generated structured data. 
 
-
----
-
-## 📎 Example Use Cases 
-
-* 📚 Building Islamic knowledge graphs (narrators, books, references) 
-* 🤖 Training LLMs with fine-tuned book metadata 
-* 🔍 Searching and referencing Arabic heritage texts 
-* 🧩 Generating semantic embeddings and document chunking 
-* 🗃️ Ingesting into SQL or graph databases for scholarly research
-
 ---
 
 ## ✅ Requirements 
