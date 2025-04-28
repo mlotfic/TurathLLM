@@ -37,6 +37,11 @@
     * **Collect all existing labeled data** into one database through scraping and other methods, following a **unified schema**. 
     * **Prepare non-labeled books** by applying **semantic chunking**, making them ready for scholar review in the UI system.
 
+## in case of chunking , we have some book sources
+* Some book sources label content with **chapters, sub-chapters, headers, and sub-headers**. 
+* Each **header** contains multiple **paragraphs**. 
+* We can use **paragraphs** as **semantic chunks** for processing.
+
 ```mermaid
 
 flowchart TD
@@ -56,7 +61,3 @@ flowchart TD
     H --> I[Unified Labeled Database]
 
 ```
-
-
-
-
