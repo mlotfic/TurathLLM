@@ -4,10 +4,10 @@
 
 ## 📌 Table of Contents
 
-1. [Project Goal](#goal)
-2. [Example Use Cases](#--example-use-cases)
+1. [Project Goal](#📌-goal)
+2. [Example Use Cases](#example-use-cases)
 3. [Project Approach](./docs/approach.md)
-3. [Key Components & Structure](./docs/approach.md)
+3. [Key Components & Structure](#key-components--structure)
 4. [Data Sources Collections](./docs/data_sources.md)
 
 ---
@@ -21,9 +21,7 @@ To enable developers, researchers, and scholars to:
 - Enable RAG pipelines with rich, contextual structured sources
 - Connect relational and graph-based knowledge systems
 
----
-
-## 📌 Core Goal
+### 📌 Core Goal
 
 *   To provide **database schema designs** (blueprints) for transforming unstructured data into structured formats.
 *   Target applications include:
@@ -34,6 +32,8 @@ To enable developers, researchers, and scholars to:
 *   Focuses on complex data like historical texts (including Islamic sources like Hadith, books), invoices, etc.
 *   Aims to bridge relational and graph data models.
 
+[(Back to top)](#📌-table-of-contents)
+
 ---
 
 ## 📎 Example Use Cases 
@@ -43,6 +43,8 @@ To enable developers, researchers, and scholars to:
 * 🔍 Searching and referencing Arabic heritage texts 
 * 🧩 Generating semantic embeddings and document chunking 
 * 🗃️ Ingesting into SQL or graph databases for scholarly research
+
+[(Back to top)](#📌-table-of-contents)
 
 ---
 
@@ -63,6 +65,8 @@ To enable developers, researchers, and scholars to:
 ### **`pipelines/`, `scripts/`, `docs/`:** 
 - Supporting materials for ETL processes, helper scripts, and documentation.
 
+[(Back to top)](#📌-table-of-contents)
+
 ---
 
 ### Dependencies (from turath_books README)
@@ -77,6 +81,8 @@ To enable developers, researchers, and scholars to:
 *   `spacy` (likely for Arabic NPL)
 *   `difflib` (likely for text similarity)
 
+[(Back to top)](#📌-table-of-contents)
+
 ---
 
 ## Overall Summary & Relationship
@@ -86,6 +92,8 @@ To enable developers, researchers, and scholars to:
 *   It takes a specific data source (Turath JSON) and processes it into structured **CSVs**.
 *   Crucially, it uses the `entity_definitions.yaml` concept from the main project to facilitate integration with data tools like **Airbyte** and **dbt**.
 *   The structured CSV output from `turath_books` is intended to be loadable into databases conforming to the schemas defined in the main project, making it suitable for AI/LLM fine-tuning, knowledge graph population, and RAG applications.
+
+[(Back to top)](#📌-table-of-contents)
 
 ---
 
@@ -109,6 +117,8 @@ To enable developers, researchers, and scholars to:
   Designed for optimal data organization and retrieval, it provides robust and efficient access to Quranic content and metadata.
   The database is meticulously structured to support various applications, including scholarly research, educational tools, and digital Quranic resources. 
 
+[(Back to top)](#📌-table-of-contents)
+
 ---
 
 ## 🔗 Related Projects & References
@@ -127,6 +137,9 @@ To enable developers, researchers, and scholars to:
 - [**Bespoke Public Talks**](https://github.com/bespoke-inc/bespoke-public-talks):  
   A full code repo for the tutorial that walks through building AI-powered chatbots, covering foundational concepts to advanced deployment techniques.
 
+[(Back to top)](#📌-table-of-contents)
+
+---
 
 ## 🎥 Video References
 
@@ -142,3 +155,8 @@ To enable developers, researchers, and scholars to:
 - [**How to Build AI Chatbots: Full Guide from Beginner to Pro (Latest Update)**](https://www.youtube.com/watch?v=SWP3k-24jT4):  
   A full tutorial that walks through building AI-powered chatbots, covering foundational concepts to advanced deployment techniques.
 
+[(Back to top)](#📌-table-of-contents)
+
+---
+
+## 📚 Books
