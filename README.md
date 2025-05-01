@@ -7,9 +7,13 @@
 1. [Project Goal](#📌-goal)
 2. [Example Use Cases](#example-use-cases)
 3. [Project Approach](./docs/approach.md)
-3. [Key Components & Structure](#key-components--structure)
-4. [Data Sources Collections](./docs/data_sources.md)
-
+4. [Key Components & Structure](#key-components--structure)
+5. [Data Sources Collections](./docs/data_sources.md)
+6. Entity Extraction 
+    - (I) [Book Structuring](#)
+    - (II) [Rgex Extraction](#)
+    - (III) [LLM Relationship Extraction](#)
+7. Flask App UI/UX Design and Implementation for review the annotation Entity Extraction 
 ---
 
 ## 📌 Goal
