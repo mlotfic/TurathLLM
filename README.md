@@ -94,6 +94,16 @@ To enable developers, researchers, and scholars to:
 - [**Sanadset 650K: Data on Hadith Narrators**](https://data.mendeley.com/datasets/5xth87zwb5/4):  
   Sanadset is a full hadith dataset that contains over 650,986 records collected from 926 historical Arabic books of hadith. This dataset can be used for further investigation and classification of hadiths (Strong/Weak), and narrators (trustworthy/not) using AI techniques, and also it can be used as a linguistic resource tool for Arabic Natural Language Processing.
 
+- [**Multi-IsnadSet MIS for Sahih Muslim Hadith with chain of narrators, based on multiple ISNAD**](https://www.sciencedirect.com/science/article/pii/S2352340924004086?ssrnid=4726768&dgcid=SSRN_redirect_SD):  
+  - `Specific`:	Islamic Hadith corpus, Multi-Isnad of Hadith Narrators, Social Network 
+  - `subject area`:	Analysis (SNA), Graph Neural Network (GNN). Neo4j Graph Database
+  - `Keywords`: Multi-Isnad of Hadith Narrators datasetChain of narrators; Machine learning; Graph database; Spatial–Temporal data; Social-Network Analysis (SNA); Graph Neural Networks (GNN) 
+  - `Data Format	Raw`: NetworkX Python Library dump
+    `Raw`: Different Visualization & Exploration softwares (Gephi, Cytoscape, and Social Network Visualizer) dump
+    `Raw`: Neo4J database dump
+    Geography Markup Language format (.gml), XML-based graph format (.graphml)
+  
+
 - [**Quran-DB**](https://github.com/youzarsiph/quran-db):  
   Quran-DB is a sophisticated and comprehensive database of the Quran, available in both SQLite3 and JSON formats.
   Designed for optimal data organization and retrieval, it provides robust and efficient access to Quranic content and metadata.
@@ -122,6 +132,12 @@ To enable developers, researchers, and scholars to:
 
 - [**Arabic Text Handling**](https://youtu.be/tA7Fv2Xf9gg):  
   A comprehensive walkthrough on transforming and handling Arabic text 
+
+- [**Ollama Course – Build AI Apps Locally**](https://youtu.be/GWB9ApTPTv4?si=W1tpOioEwqqpBQgc):  
+  Learn how to set up and use Ollama to build powerful AI applications locally. This hands-on course covers pulling and customizing models, REST APIs, Python integrations, and real-world projects like a Grocery List Organizer, RAG System, and an AI Recruiter Agency. Perfect for developers and AI enthusiasts ready to bring their ideas to life with local LLMs. Don’t miss the exclusive BONUS project at the end! 
+
+- [**Full Flask Course For Python - From Basics To Deployment**](https://www.youtube.com/watch?v=oQ5UfJqW5Jo):  
+  This is a full Flask course for Python. It goes from the very basics like templates and POST requests, to more advanced stuff like sessions and database connections up until blueprints and deployment with Docker.
 
 - [**How to Build AI Chatbots: Full Guide from Beginner to Pro (Latest Update)**](https://www.youtube.com/watch?v=SWP3k-24jT4):  
   A full tutorial that walks through building AI-powered chatbots, covering foundational concepts to advanced deployment techniques.
