@@ -23,5 +23,12 @@
 | `summary`      | Short summary or abstract                                   | `A foundational text on seeking knowledge...`|
 | `metadata`     | Extra metadata (as JSON)                                    | `{“series”: “Ihya Ulum al-Din”}`            |
 
-“✅ Example JSON Record --------------------- json CopyEdit `{ "book_id": "book-001", "title": "The Book of Knowledge", "author": "Imam al-Ghazali", "translator": "Muhammad Nur", "editor": "Ali Ahmad", "publisher": "Dar al-Minhaj", "edition": "2nd edition", "isbn": "978-1234567890", "language": "ar", "publication_year": 2001, "pages": 350, "subject": "Islamic jurisprudence", "keywords": ["fiqh", "knowledge", "ethics"], "summary": "A foundational text on seeking knowledge...", "metadata": { "series": "Ihya Ulum al-Din" } }` * * * ### ✅ SQL `CREATE TABLE` statement sql CopyEdit `CREATE TABLE book_metadata ( book_id VARCHAR(255) PRIMARY KEY, title TEXT NOT NULL, author TEXT, translator TEXT, editor TEXT, publisher TEXT, edition TEXT, isbn VARCHAR(20), language VARCHAR(10), publication_year INT, pages INT, subject TEXT, keywords JSON, summary TEXT, metadata JSON, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP );`”
+“✅ Example JSON Record --------------------- json CopyEdit `{ "book_id": "book-001", "title": "The Book of Knowledge", "author": "Imam al-Ghazali", "translator": "Muhammad Nur", "editor": "Ali Ahmad", "publisher": "Dar al-Minhaj", "edition": "2nd edition", "isbn": "978-1234567890", "language": "ar", "publication_year": 2001, "pages": 350, "subject": "Islamic jurisprudence", "keywords": ["fiqh", "knowledge", "ethics"], "summary": "A foundational text on seeking knowledge...", "metadata": { "series": "Ihya Ulum al-Din" } }` 
+
+* * * 
+
+### ✅ SQL `CREATE TABLE` statement 
+
+```sql
+CREATE TABLE book_metadata ( book_id VARCHAR(255) PRIMARY KEY, title TEXT NOT NULL, author TEXT, translator TEXT, editor TEXT, publisher TEXT, edition TEXT, isbn VARCHAR(20), language VARCHAR(10), publication_year INT, pages INT, subject TEXT, keywords JSON, summary TEXT, metadata JSON, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP );`”
 
