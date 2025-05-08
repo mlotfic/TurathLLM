@@ -3,6 +3,8 @@
 ## I. 🏷️ Labeled Data Sources Available
 
 ### 1. [🌐 OpenITI Corpus](https://openiti.org/projects/OpenITI%20Corpus.html) `books sources`
+> ⚠️ **Caution:** This collection includes works from non-Sunni 🕌 and non-Muslim ✡️✝️ sources. Please handle and interpret the texts with care. 📚
+
 The OpenITI corpus is a open-access and machine-actionable collection of Persian and Arabic texts.
 The large number of texts in our collection are in various stages of being transformed into standards-compliant and metadata-enriched scholarly corpus texts.
 Most OpenITI corpus texts are built upon digital texts we obtained from Shamilah, al-Jāmiʿ al-Kabīr, Maktabat al-Shiʿa, Ganjoor, and other online collections that have varying levels of fidelity to the original print versions (due to manual or automatic—i.e., OCR—transcription errors). In the coming years, however, we will be dramatically scaling up the number of new digital texts that we add to the corpus through our own OCR process developed in the OpenITI AOCP project.
