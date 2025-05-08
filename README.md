@@ -117,7 +117,7 @@ To enable developers, researchers, and scholars to:
 
 - [**OpenITI**](https://alraqmiyyat.github.io/OpenITI/):
 
-  > ⚠️ **Caution:** This collection includes works from non-Sunni 🕌 (*mosque*) and non-Muslim ✡️ (*Jewish*) ✝️ (*Christian*) sources. Please handle and interpret the texts with care. 📚 (*texts*)
+  > ⚠️ **Caution:** This collection may include work from non-Sunni 🕌 (*mosque*) and non-Muslim ✡️ (*Jewish*) ✝️ (*Christian*) sources. Please handle and interpret the texts with care. 📚 (*texts*)
 
   OpenITI is a corpus of digital Islamicate texts. It is primarily intended as a foundation for new forms of macro textual analysis and digital scholarship. It is **not** (currently) a digital library with a user interface, reading environment, or search functions.
 
