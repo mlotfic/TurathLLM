@@ -115,10 +115,17 @@ To enable developers, researchers, and scholars to:
     `Raw`: Neo4J database dump
     Geography Markup Language format (.gml), XML-based graph format (.graphml)
 
-- [**OpenITI**](https://kitab-project.org/docs/openITI#1-what-is-openiti):  
-  OpenITI is a corpus of digital Islamicate texts. It is mainly meant as the foundation that can be used for new forms of macro textual analysis and digital scholarship. It is (currently) not a digital library with a user interface, reading environment and search functions. 
-  > ⚠️ **Caution:** This collection includes works from non-Sunni 🕌 and non-Muslim ✡️✝️ sources. Please handle and interpret the texts with care. 📚
+- [**OpenITI**](https://alraqmiyyat.github.io/OpenITI/):
 
+  > ⚠️ **Caution:** This collection includes works from non-Sunni 🕌 (*mosque*) and non-Muslim ✡️ (*Jewish*) ✝️ (*Christian*) sources. Please handle and interpret the texts with care. 📚 (*texts*)
+
+  OpenITI is a corpus of digital Islamicate texts. It is primarily intended as a foundation for new forms of macro textual analysis and digital scholarship. It is **not** (currently) a digital library with a user interface, reading environment, or search functions.
+
+  - 📂 (*GitHub Repo*) [OpenITI Annotation](https://github.com/OpenITI/Annotation)
+  - 📘 (*Guide*) [OpenITI mARkdown Format](https://maximromanov.github.io/mARkdown/)
+  - 🐍 (*Python Library*) [OpenITI Python Lib](https://github.com/OpenITI/openiti)
+  - 📄 (*Docs*) [OpenITI Python Lib Docs](https://openiti.readthedocs.io/en/latest/source/usermanual.html)
+  - 📦 (*Corpus*) [OpenITI Corpus](https://github.com/OpenITI/RELEASE/tree/v2023.1.8)
 
 - [**Quran-DB**](https://github.com/youzarsiph/quran-db):  
   Quran-DB is a sophisticated and comprehensive database of the Quran, available in both SQLite3 and JSON formats.
