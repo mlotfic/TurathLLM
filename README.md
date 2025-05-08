@@ -114,7 +114,11 @@ To enable developers, researchers, and scholars to:
     `Raw`: Different Visualization & Exploration softwares (Gephi, Cytoscape, and Social Network Visualizer) dump
     `Raw`: Neo4J database dump
     Geography Markup Language format (.gml), XML-based graph format (.graphml)
-  
+
+- [**OpenITI**](https://kitab-project.org/docs/openITI#1-what-is-openiti):  
+  OpenITI is a corpus of digital Islamicate texts. It is mainly meant as the foundation that can be used for new forms of macro textual analysis and digital scholarship. It is (currently) not a digital library with a user interface, reading environment and search functions. 
+  > ⚠️ **Caution:** This collection includes works from non-Sunni 🕌 and non-Muslim ✡️✝️ sources. Please handle and interpret the texts with care. 📚
+
 
 - [**Quran-DB**](https://github.com/youzarsiph/quran-db):  
   Quran-DB is a sophisticated and comprehensive database of the Quran, available in both SQLite3 and JSON formats.
@@ -134,6 +138,9 @@ To enable developers, researchers, and scholars to:
 
 - [**Arabic NLP (camel_tools)**](https://github.com/CAMeL-Lab/camel_tools):  
   CAMeL Tools is suite of Arabic natural language processing tools developed by the CAMeL Lab at New York University Abu Dhabi.
+
+- [**Arabic NLP (pyarabic)**](https://github.com/linuxscout/pyarabic):  
+  A specific Arabic language library for Python, provides basic functions to manipulate Arabic letters and text, like detecting Arabic letters, Arabic letters groups and characteristics, remove diacritics etc.
 
 - [**Arabic NLP (pyarabic)**](https://github.com/linuxscout/pyarabic):  
   A specific Arabic language library for Python, provides basic functions to manipulate Arabic letters and text, like detecting Arabic letters, Arabic letters groups and characteristics, remove diacritics etc.
