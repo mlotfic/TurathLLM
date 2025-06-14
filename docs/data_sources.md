@@ -81,9 +81,10 @@ In this dataset, we processed the original PDF files using Google Document AI AP
 
 ---
 
-### 2. [🌐 waqfeya.net](https://waqfeya.net/index.php) `books sources`
+### 2. [🌐 Shamela](https://shamela.ws) `books sources`
 
-Waqfeya is one of the primary online resources for Islamic books, similar to Shamela. It hosts more than 10,000 PDF books across over 80 categories.
+Shamela Waqfeya is one of the primary online resources for Islamic books, similar to [Shamela](https://shamela.ws). It hosts more than 4,500 PDF books across over 40 categories.
+
 In this dataset, we processed the original PDF files using Google Document AI APIs and extracted their contents into two additional formats: TXT and DOCX.
 
 - [🎥 About](https://www.youtube.com/watch?v=qxO0GTz-cp8)
@@ -94,9 +95,10 @@ In this dataset, we processed the original PDF files using Google Document AI AP
 
 ---
 
-### 3. [🌐 waqfeya.net](https://waqfeya.net/index.php) `books sources`
+### 3. [🌐 Prophet’s Mosque Library](https://alharamain.gov.sa/public/?page=page_299500) `books sources`
 
-Waqfeya is one of the primary online resources for Islamic books, similar to Shamela. It hosts more than 10,000 PDF books across over 80 categories.
+[Prophet’s Mosque Library](https://alharamain.gov.sa/public/?page=page_299500) is one of the primary resources for Islamic books. It hosts more than 48,000 PDF books across over 70 categories.
+
 In this dataset, we processed the original PDF files using Google Document AI APIs and extracted their contents into two additional formats: TXT and DOCX.
 
 - [🎥 About](https://www.youtube.com/watch?v=qxO0GTz-cp8)
