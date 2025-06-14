@@ -81,13 +81,39 @@ In this dataset, we processed the original PDF files using Google Document AI AP
 
 ---
 
-### 8. [🌐 Islamic Books](#) `books sources`
+### 2. [🌐 waqfeya.net](https://waqfeya.net/index.php) `books sources`
+
+Waqfeya is one of the primary online resources for Islamic books, similar to Shamela. It hosts more than 10,000 PDF books across over 80 categories.
+In this dataset, we processed the original PDF files using Google Document AI APIs and extracted their contents into two additional formats: TXT and DOCX.
+
+- [🎥 About](https://www.youtube.com/watch?v=qxO0GTz-cp8)
+
+- 📂 Huggingface Files: [shamela-waqfeya-library-compressed](https://huggingface.co/datasets/ieasybooks-org/shamela-waqfeya-library-compressed)
+
+- 📂 Huggingface Files: [shamela-waqfeya-library](https://huggingface.co/datasets/ieasybooks-org/shamela-waqfeya-library)
+
+---
+
+### 3. [🌐 waqfeya.net](https://waqfeya.net/index.php) `books sources`
+
+Waqfeya is one of the primary online resources for Islamic books, similar to Shamela. It hosts more than 10,000 PDF books across over 80 categories.
+In this dataset, we processed the original PDF files using Google Document AI APIs and extracted their contents into two additional formats: TXT and DOCX.
+
+- [🎥 About](https://www.youtube.com/watch?v=qxO0GTz-cp8)
+
+- 📂 Huggingface Files: [prophet-mosque-library-compressed books](https://huggingface.co/datasets/ieasybooks-org/prophet-mosque-library-compressed)
+
+- 📂 Huggingface Files: [prophet-mosque-library books](https://huggingface.co/datasets/ieasybooks-org/prophet-mosque-library)
+
+---
+
+### 4. [🌐 Islamic Books](#) `books sources`
 
 - 📂 Kaggle Files: [Drive kamal fih kolchi (fiqh)(mokhtalaf el.hadith)](https://drive.google.com/drive/u/1/folders/1SN7oiD46r6rO5W7q57ujjHGHxFzi-rOI)
 
 ---
 
-### 9. [🌐 Islamic Books](#) `books sources`
+### 5. [🌐 Islamic Books](#) `books sources`
 
 - 📂 Kaggle Files: [hada howa : dyal Qayoum (tafsir hadith)](https://drive.google.com/file/d/1qAa9tBJxvcrENW6oSo_ZdjUaXfg2LtC5/view)
 
