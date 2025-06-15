@@ -84,6 +84,7 @@ To enable developers, researchers, and scholars to:
 *   `dateparser` (likely for Arabic date detection)
 *   `spacy` (likely for Arabic NPL)
 *   `difflib` (likely for text similarity)
+*   `hydra` (Configuration Management Framework)
 
 [(Back to top)](#📌-table-of-contents)
 
