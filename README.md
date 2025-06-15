@@ -1,3 +1,84 @@
+# 🕌 TurathLLM
+
+**Turn raw Islamic heritage texts into structured, searchable databases.**
+
+TurathLLM is a data pipeline designed to extract structured information from unstructured Islamic books, especially classical texts. It uses rule-based logic, small AI models, and regex to prepare datasets for scholarly review, research, or application development.
+
+---
+
+## ✨ What It Does
+
+- 🔍 Collects and parses classical Islamic texts (Hadith, Fiqh, Tafsir, etc.)
+- 🧠 Uses regex + small language models to extract named entities, chains, and references
+- 🗃️ Builds structured outputs in SQL-ready formats
+- 🏷️ Labels and annotates data for easier scholarly validation
+
+---
+
+## 📌 Who It's For
+
+### 🔧 **Developers & Data Engineers**
+
+**TurathLLM** is an open-source pipeline that transforms unstructured Islamic heritage texts into structured SQL databases. It uses regex, lightweight AI models, and data-cleaning tools to parse classical books, extract metadata, and build review-ready datasets. Ideal for devs building tools around knowledge graphs, search systems, or scholarly annotation platforms.
+
+> Automate the process of turning messy text into normalized, queryable databases — perfect for building knowledge graphs, semantic search, and annotation tools.
+
+### 📊 **Data Scientists & NLP Folks**
+
+**TurathLLM** is a hybrid rule-based + AI pipeline that turns classical Islamic texts into structured data. Designed for Arabic NLP tasks, it combines regex-driven tagging with small LLMs to extract entities, relationships, and schema-ready metadata from complex heritage content. It’s a starting point for downstream tasks like NER, chain validation, and scholarly review support.
+
+> Train/test Arabic NLP models using structured ground truth from real Islamic text. Perform entity linking, isnad classification, matn defect analysis, and more.
+
+### 📚 **Islamic Scholars & Researchers**
+
+**TurathLLM** is a tool that helps prepare classical Islamic texts for scholarly review. It collects and organizes raw book content, then labels and structures the data — including narrators, chains, references, and metadata — using AI and rules. The result is a searchable, structured format that simplifies the task of verifying, analyzing, and studying traditional knowledge.
+
+> Get book content that’s pre-organized for review: chains, narrators, sources, topics, references — all clearly labeled and ready to verify.
+
+---
+
+### 🪄 Bonus: Short 1-Liner for GitHub / Tags / Indexing 
+* `From raw Islamic text to SQL — powered by AI and regex`
+*  `Structured Islamic knowledge from classical books`
+* `Parse, label, and structure Turath texts for modern tools`
+
+---
+
+## ⚙️ Tech Stack
+
+| Layer        | Tools & Libraries                                |
+|--------------|--------------------------------------------------|
+| Language     | Python                                           |
+| NLP          | CAMeL Tools, regex, local LLM (via Ollama)      |
+| DB           | SQLite / PostgreSQL                              |
+| ETL          | Custom pipelines, Pandas, DuckDB, FastAPI        |
+| Graph (opt)  | Neo4j for narrator/chain relationships           |
+| Deployment   | CLI + Jupyter + API-ready (FastAPI/Uvicorn)     |
+
+---
+
+## 📁 Project Structure
+
+```css
+turathstruct/
+            ├── data/
+            │         ├── raw/ # Unprocessed book texts (JSON, TXT, HTML, etc.)
+            │         ├── processed/ # Cleaned and normalized outputs
+            │         └── schemas/ # YAMLs for grading, metadata mapping, etc.
+            ├── src/
+            │         ├── extraction/ # Regex, NER, LLM integration
+            │         ├── labeling/ # Tagging narrators, chain roles, references
+            │         ├── db/ # SQLite/PostgreSQL export scripts
+            │         └── utils/ # Helper functions, config loaders
+            ├── notebooks/ # Jupyter experiments and visualizations
+            ├── configs/ # YAML/JSON configs for pipeline control
+            ├── main.py # Main CLI entrypoint
+            └── README.md
+```
+
+---
+
+
 # 📚 Project: 
 
 > unstructured-to-structured-ai-schema (Main Page)
