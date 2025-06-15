@@ -72,8 +72,35 @@ turathstruct/
             └── README.md
 ```
 
----
+## 🔮 Roadmap
+* Regex-based narrator chain extraction
+* Grading schema for Hadith (authenticity, isnad defects, etc.)
+* LLM-powered text labeling and chain classification
+* Full FastAPI interface for book annotation and review 
+* Neo4j integration for isnad/narrator graph exploration 
 
+## 🤝 Contribute 
+Got regex skills, Islamic text experience, or Arabic NLP ideas? Jump in! Open an issue or start a PR. 
+
+##📜 License
+MIT License – use freely and build something meaningful. 
+
+**Built for scholars. Powered by code. Inspired by Turath.**”
+
+
+## 🚀 Quick Start
+
+```bash
+# 1. Clone the project
+git clone https://github.com/yourname/turathstruct
+cd turathstruct
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Run initial pipeline
+python main.py --source ./data/raw/ --output ./data/processed/
+```
 
 # 📚 Project: 
 
