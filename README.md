@@ -2,7 +2,24 @@
 
 **Turn raw Islamic heritage texts into structured, searchable databases.**
 
-TurathLLM is a data pipeline designed to extract structured information from unstructured Islamic books, especially classical texts. It uses rule-based logic, small AI models, and regex to prepare datasets for scholarly review, research, or application development.
+> **Bridging classical Islamic texts and modern AI.**
+
+**TurathLLM** is an open-source pipeline that transforms unstructured Islamic and Arabic heritage texts into structured, searchable databases. It uses lightweight language models, rule-based extraction, and regex to label, structure, and prepare content for scholarly review and research.
+
+
+---
+
+## ✨ What It Does
+
+- 🧠 Extracts structured metadata (narrators, chains, references, etc.) from Arabic and Islamic texts
+- 🏷️ Labels key entities using regex + small LLMs
+- 📦 Outputs structured formats for SQL, knowledge graphs, or annotation platforms
+- 🔍 Makes classical texts usable for NLP, indexing, and educational tools
+
+---
+
+
+
 
 ## ✨ What It Does
 
