@@ -72,22 +72,6 @@ turathstruct/
             └── README.md
 ```
 
-## 🔮 Roadmap
-* Regex-based narrator chain extraction
-* Grading schema for Hadith (authenticity, isnad defects, etc.)
-* LLM-powered text labeling and chain classification
-* Full FastAPI interface for book annotation and review 
-* Neo4j integration for isnad/narrator graph exploration 
-
-## 🤝 Contribute 
-Got regex skills, Islamic text experience, or Arabic NLP ideas? Jump in! Open an issue or start a PR. 
-
-##📜 License
-MIT License – use freely and build something meaningful. 
-
-**Built for scholars. Powered by code. Inspired by Turath.**”
-
-
 ## 🚀 Quick Start
 
 ```bash
@@ -101,6 +85,41 @@ pip install -r requirements.txt
 # 3. Run initial pipeline
 python main.py --source ./data/raw/ --output ./data/processed/
 ```
+
+
+## 🔮 Roadmap
+* Regex-based narrator chain extraction
+* Grading schema for Hadith (authenticity, isnad defects, etc.)
+* LLM-powered text labeling and chain classification
+* Full FastAPI interface for book annotation and review 
+* Neo4j integration for isnad/narrator graph exploration 
+
+## 🤝 Contribute 
+Got regex skills, Islamic text experience, or Arabic NLP ideas? Jump in! Open an issue or start a PR. 
+
+---
+
+## 🛡️ Disclaimer & Attribution
+
+This project brings together data and book content from various sources, many of which were compiled by others with deep dedication and effort. Some content may be subject to copyright or limited usage terms.
+
+We aim to provide a structured base to help scholars and developers explore the potential of applying modern technologies to Islamic and Arabic texts. If you use or share this data:
+
+- 📌 Please **cite the original sources** whenever possible
+- 🚫 Do **not use for commercial purposes** without checking rights
+- 🕊️ This is a non-profit, good-faith effort. We seek **Allah’s forgiveness** for any unintended mistakes or credit omissions.
+
+> If your content is included here and you'd like it removed or properly attributed, reach out and we will resolve it immediately.
+
+---
+
+##📜 License
+MIT License – use freely and build something meaningful. 
+
+**Built for scholars. Powered by code. Inspired by Turath.**”
+
+
+
 
 # 📚 Project: 
 
