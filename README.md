@@ -1,3 +1,143 @@
+# 🕌 TurathLLM
+
+**Turn raw Islamic heritage texts into structured, searchable databases.**
+
+> **Bridging classical Islamic texts and modern AI.**
+
+**TurathLLM** is an open-source pipeline that transforms unstructured Islamic and Arabic heritage texts into structured, searchable databases. It uses lightweight language models, rule-based extraction, and regex to label, structure, and prepare content for scholarly review and research.
+
+
+---
+
+## ✨ What It Does
+
+- 🧠 Extracts structured metadata (narrators, chains, references, etc.) from Arabic and Islamic texts
+- 🏷️ Labels key entities using regex + small LLMs
+- 📦 Outputs structured formats for SQL, knowledge graphs, or annotation platforms
+- 🔍 Makes classical texts usable for NLP, indexing, and educational tools
+
+---
+
+
+
+
+## ✨ What It Does
+
+- 🔍 Collects and parses classical Islamic texts (Hadith, Fiqh, Tafsir, etc.)
+- 🧠 Uses regex + small language models to extract named entities, chains, and references
+- 🗃️ Builds structured outputs in SQL-ready formats
+- 🏷️ Labels and annotates data for easier scholarly validation
+
+## 📌 Who It's For
+
+### 🔧 **Developers & Data Engineers**
+
+**TurathLLM** is an open-source pipeline that transforms unstructured Islamic heritage texts into structured SQL databases. It uses regex, lightweight AI models, and data-cleaning tools to parse classical books, extract metadata, and build review-ready datasets. Ideal for devs building tools around knowledge graphs, search systems, or scholarly annotation platforms.
+
+> Automate the process of turning messy text into normalized, queryable databases — perfect for building knowledge graphs, semantic search, and annotation tools.
+
+### 📊 **Data Scientists & NLP Folks**
+
+**TurathLLM** is a hybrid rule-based + AI pipeline that turns classical Islamic texts into structured data. Designed for Arabic NLP tasks, it combines regex-driven tagging with small LLMs to extract entities, relationships, and schema-ready metadata from complex heritage content. It’s a starting point for downstream tasks like NER, chain validation, and scholarly review support.
+
+> Train/test Arabic NLP models using structured ground truth from real Islamic text. Perform entity linking, isnad classification, matn defect analysis, and more.
+
+### 📚 **Islamic Scholars & Researchers**
+
+**TurathLLM** is a tool that helps prepare classical Islamic texts for scholarly review. It collects and organizes raw book content, then labels and structures the data — including narrators, chains, references, and metadata — using AI and rules. The result is a searchable, structured format that simplifies the task of verifying, analyzing, and studying traditional knowledge.
+
+> Get book content that’s pre-organized for review: chains, narrators, sources, topics, references — all clearly labeled and ready to verify.
+
+---
+
+### 🪄 Bonus: Short 1-Liner for GitHub / Tags / Indexing 
+* `From raw Islamic text to SQL — powered by AI and regex`
+*  `Structured Islamic knowledge from classical books`
+* `Parse, label, and structure Turath texts for modern tools`
+
+---
+
+## ⚙️ Tech Stack
+
+| Layer        | Tools & Libraries                                |
+|--------------|--------------------------------------------------|
+| Language     | Python                                           |
+| NLP          | CAMeL Tools, regex, local LLM (via Ollama)      |
+| DB           | SQLite / PostgreSQL                              |
+| ETL          | Custom pipelines, Pandas, DuckDB, FastAPI        |
+| Graph (opt)  | Neo4j for narrator/chain relationships           |
+| Deployment   | CLI + Jupyter + API-ready (FastAPI/Uvicorn)     |
+
+---
+
+## 📁 Project Structure
+
+```css
+turathstruct/
+            ├── data/
+            │         ├── raw/ # Unprocessed book texts (JSON, TXT, HTML, etc.)
+            │         ├── processed/ # Cleaned and normalized outputs
+            │         └── schemas/ # YAMLs for grading, metadata mapping, etc.
+            ├── src/
+            │         ├── extraction/ # Regex, NER, LLM integration
+            │         ├── labeling/ # Tagging narrators, chain roles, references
+            │         ├── db/ # SQLite/PostgreSQL export scripts
+            │         └── utils/ # Helper functions, config loaders
+            ├── notebooks/ # Jupyter experiments and visualizations
+            ├── configs/ # YAML/JSON configs for pipeline control
+            ├── main.py # Main CLI entrypoint
+            └── README.md
+```
+
+## 🚀 Quick Start
+
+```bash
+# 1. Clone the project
+git clone https://github.com/yourname/turathstruct
+cd turathstruct
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Run initial pipeline
+python main.py --source ./data/raw/ --output ./data/processed/
+```
+
+
+## 🔮 Roadmap
+* Regex-based narrator chain extraction
+* Grading schema for Hadith (authenticity, isnad defects, etc.)
+* LLM-powered text labeling and chain classification
+* Full FastAPI interface for book annotation and review 
+* Neo4j integration for isnad/narrator graph exploration 
+
+## 🤝 Contribute 
+Got regex skills, Islamic text experience, or Arabic NLP ideas? Jump in! Open an issue or start a PR. 
+
+---
+
+## 🛡️ Disclaimer & Attribution
+
+This project brings together data and book content from various sources, many of which were compiled by others with deep dedication and effort. Some content may be subject to copyright or limited usage terms.
+
+We aim to provide a structured base to help scholars and developers explore the potential of applying modern technologies to Islamic and Arabic texts. If you use or share this data:
+
+- 📌 Please **cite the original sources** whenever possible
+- 🚫 Do **not use for commercial purposes** without checking rights
+- 🕊️ This is a non-profit, good-faith effort. We seek **Allah’s forgiveness** for any unintended mistakes or credit omissions.
+
+> If your content is included here and you'd like it removed or properly attributed, reach out and we will resolve it immediately.
+
+---
+
+##📜 License
+MIT License – use freely and build something meaningful. 
+
+**Built for scholars. Powered by code. Inspired by Turath.**”
+
+
+
+
 # 📚 Project: 
 
 > unstructured-to-structured-ai-schema (Main Page)
